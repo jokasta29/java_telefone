@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Java project simulates a telephone device with music playing capabilities. The code structure includes classes for a telephone device, a music player, an internet browser, and their interactions. The main class, `TelefoneFuncionando`, demonstrates the functionality of the telephone device.
+This Java ☕ project implements a phone with music playing capabilities, utilizing a hierarchical class structure. Rather than every class extending a single main class, the classes are organized in a hierarchy, with each class extending another to promote code reuse and maintainability.
 
 ## Getting Started
 
@@ -13,23 +13,67 @@ To run the project, follow these steps:
 3. Compile and run the `TelefoneFuncionando` class.
 
 
-## Project Structure
-1. TelefoneFuncionando Class
-The main class of the project that demonstrates the telephone's functionality.
+## Class Hierarchy
+1. TelefoneFuncionando
+Main class demonstrating the phone's functionality.
+Extends: ReprodutorMusical
+2. ReprodutorMusical
+Provides music-related functionality.
+Extends: AparelhoTelefonico
+3. NavegadorDeInternet
+Manages internet browsing features.
+Extends: None (directly extends Object)
+4. AparelhoTelefonico
+Represents the core functionality of a phone.
+Extends: NavegadorDeInternet
 
-2. ReprodutorMusical Class
-A class representing the music player functionalities.
-
-3. NavegadorDeInternet Class
-A class representing the internet browser functionalities.
-
-4. AparelhoTelefonico Class
-A class representing the telephone device functionalities.
 
 ## Usage
 The TelefoneFuncionando class serves as an entry point to the project. It demonstrates the sequence of operations involving the music player, internet browser, and telephone functionalities.
 
-Feel free to explore and modify the code to suit your needs.
+
+Feel free to explore and modify the code to suit your needs. 😄
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## For a simple and clear visualization
+
+```mermaid
+ 
+classDiagram
+  class TelefoneFuncionando {
+    +main(String[] args)
+  }
+
+  class ReprodutorMusical {
+    -boolean tocar
+    -boolean pausar
+    -boolean selecionarMusica
+    +tocar()
+    +pausar()
+    +selecionarMusica()
+  }
+
+  class NavegadorDeInternet {
+    -boolean exibirPagina
+    -boolean adicionarNovaAba
+    -boolean atualizarPagina
+    +exibirPagina()
+    +adicionarNovaAba()
+    +atualizarPagina()
+  }
+
+  class AparelhoTelefonico {
+    -boolean ligar
+    -boolean atender
+    -boolean iniciarCorreioVoz
+    +ligar()
+    +atender()
+    +iniciarCorreioVoz()
+  }
+
+  TelefoneFuncionando --|> ReprodutorMusical
+  ReprodutorMusical --|> AparelhoTelefonico
+  AparelhoTelefonico --|> NavegadorDeInternet
