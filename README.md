@@ -1,23 +1,35 @@
-<<<<<<< HEAD
+# Telephone Music Player Project 📱
+
+## Overview
+
+This Java project simulates a telephone device with music playing capabilities. The code structure includes classes for a telephone device, a music player, an internet browser, and their interactions. The main class, `TelefoneFuncionando`, demonstrates the functionality of the telephone device.
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+To run the project, follow these steps:
 
-## Folder Structure
+1. Ensure you have Java installed on your system.
+2. Download the project files.
+3. Compile and run the `TelefoneFuncionando` class.
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Project Structure
+1. TelefoneFuncionando Class
+The main class of the project that demonstrates the telephone's functionality.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. ReprodutorMusical Class
+A class representing the music player functionalities.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+3. NavegadorDeInternet Class
+A class representing the internet browser functionalities.
 
-## Dependency Management
+4. AparelhoTelefonico Class
+A class representing the telephone device functionalities.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# java_telefone
-This is a project in Java. 
->>>>>>> e6d1f83fd42e77c4bbfb278003661e5792f2f7c2
+## Usage
+The TelefoneFuncionando class serves as an entry point to the project. It demonstrates the sequence of operations involving the music player, internet browser, and telephone functionalities.
+
+Feel free to explore and modify the code to suit your needs.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
